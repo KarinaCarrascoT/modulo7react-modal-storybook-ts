@@ -1,0 +1,296 @@
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.wrapper {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+  margin: 6px 0 6px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+.welcome {
+  color: #333;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+label {
+  color: #F90;
+}
+
+ .modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+
+}
+.storybook-modal--primaryjj {
+  color: white;
+  background-color: #1ea7fd;
+}
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner{
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+}
+.modal_size_large{
+  height: 70%;
+  width: 50%;
+}
+.modal_size_medium{
+  height: 50%;
+  width: 50%;
+}
+
+.modal_size_small{
+  height: 20%;
+  width: 20%;
+}
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+.btn {
+  background: green;
+  padding: 1em;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn--blue {
+  background: #2980b9;
+}
+.btn--blue:active {
+  background: blue;
+}
+.btn--blue:hover
+{
+  background: #0066FF;
+}
+.btn--blue:focus {
+  background: #3498db;
+}
+
+.btn--green {
+  background: green;
+}
+.btn--green:active {
+  background: green;
+}
+.btn--green:hover
+{
+  background: #2ceb6c;
+}
+.btn--green:focus {
+  background: #2ecc71;
+}
+
+.btn--red {
+  background: #ad0404;
+}
+.btn--red:hover,
+.btn--red:focus {
+  background: #e24949;
+}
+.btn--red:active {
+  background: red;
+}
+
+
+section {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 48px 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  color: #333;
+}
+
+section h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 0 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+section p {
+  margin: 1em 0;
+}
+
+section a {
+  text-decoration: none;
+  color: #1ea7fd;
+}
+
+section ul {
+  padding-left: 30px;
+  margin: 1em 0;
+}
+
+section li {
+  margin-bottom: 8px;
+}
+
+section .tip {
+  display: inline-block;
+  border-radius: 1em;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 700;
+  background: #e7fdd8;
+  color: #66bf3c;
+  padding: 4px 12px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+section .tip-wrapper {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section .tip-wrapper svg {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+section .tip-wrapper svg path {
+  fill: #1ea7fd;
+}
+
+
+/*# sourceMappingURL=main.358aae4c.css.map*/
