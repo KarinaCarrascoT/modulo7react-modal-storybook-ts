@@ -19,7 +19,7 @@ export const Simple = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   label: 'Simple',
-  url: 'http://www.placeholder.io',
+  url: 'http://placeholder.io.com'
 };
 
 export const Advanced = Template.bind({});
