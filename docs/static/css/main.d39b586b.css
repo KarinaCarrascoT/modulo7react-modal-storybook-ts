@@ -62,10 +62,9 @@ button + button {
   margin-right: 10px;
 }
 
-label{
-  color: #F90
+label {
+  color: #F90;
 }
-
 section {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -137,4 +136,4 @@ section .tip-wrapper svg path {
 }
 
 
-/*# sourceMappingURL=main.e447258f.css.map*/
+/*# sourceMappingURL=main.d39b586b.css.map*/
