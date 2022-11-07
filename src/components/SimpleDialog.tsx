@@ -33,7 +33,7 @@ function SimpleDialog(props: SimpleDialogProps) {
 
   return (
     <Dialog onClose={handleClose} open={open}>
-      <DialogTitle>Set backup account</DialogTitle>
+      <DialogTitle>Seleccione la Cuenta de Correo para Módulo 7 React</DialogTitle>
       <List sx={{ pt: 0 }}>
         {emails.map((email) => (
           <ListItem button onClick={() => handleListItemClick(email)} key={email}>
@@ -51,7 +51,7 @@ function SimpleDialog(props: SimpleDialogProps) {
               <AddIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Add account" />
+          <ListItemText primary="Agregar Cuenta" />
         </ListItem>
       </List>
     </Dialog>
@@ -74,11 +74,11 @@ export default function SimpleDialogDemo() {
   return (
     <div>
       <Typography variant="subtitle1" component="div">
-        Selected: {selectedValue}
+        Correo Seleccionado: {selectedValue}
       </Typography>
       <br />
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open simple dialog
+        Ejemplo Open simple dialog
       </Button>
       <SimpleDialog
         selectedValue={selectedValue}

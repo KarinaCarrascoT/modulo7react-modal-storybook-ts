@@ -1,22 +1,23 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import AlertDialog from '../components/AlertDialog';
+import PersistentDrawer from '../components/PersistentDrawer';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Modal/AlertDialog',
-  component: AlertDialog,
+  title: 'Example/Drawer/PersistentDrawer',
+  component: PersistentDrawer,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
   },
-} as ComponentMeta<typeof AlertDialog>;
+} as ComponentMeta<typeof PersistentDrawer>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof AlertDialog> = (args) => <AlertDialog/>;
+const Template: ComponentStory<typeof PersistentDrawer> = (args) => <PersistentDrawer/>;
 
-export const Condiciones = Template.bind({});
+export const Persistente = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Condiciones.args = {
+Persistente.args = {
+    DrawerHeader : '',
+    drawerWidth: 240,
 };
-

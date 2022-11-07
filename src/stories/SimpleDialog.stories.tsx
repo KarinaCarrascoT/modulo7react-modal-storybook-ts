@@ -15,11 +15,9 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof SimpleDialogDemo> = (args) => <SimpleDialogDemo/>;
 
-export const Simple = Template.bind({});
+export const ListaCorreos = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Simple.args = {
-  open: true,
-  selectedValue: '1',
+ListaCorreos.args = {
 };
 
 
