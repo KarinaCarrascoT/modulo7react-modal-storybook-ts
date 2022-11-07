@@ -12,7 +12,7 @@
   transition: opacity .25s ease;
 
 }
-.storybook-modal--primary {
+.storybook-modal--primaryjj {
   color: white;
   background-color: #1ea7fd;
 }
@@ -128,14 +128,14 @@
 }
 
 .btn--green {
-  background: #27ae60;
+  background: green;
 }
 .btn--green:active {
   background: green;
 }
 .btn--green:hover
 {
-  background: #00ff55;
+  background: #2ceb6c;
 }
 .btn--green:focus {
   background: #2ecc71;

@@ -16,20 +16,21 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />;
 
-export const Primary = Template.bind({});
+export const SimpleDialog = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
+SimpleDialog.args = {
  
-  title: 'Titulo Primary',
-  text: 'Texto de prueba',
-  buttonText: 'Abrir modal',
-  size: 'small',
+  title: 'Título Diálogo Simple',
+  text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ',
+  buttonText: 'Open Simple Dialog',
+  size: 'large',
   buttonColor: 'green'
   
 };
 
 export const BasicDialog = Template.bind({});
-Primary.args = {
+
+BasicDialog.args = {
  
   title: 'Diálogo Básico',
   text: 'Texto de prueba',
@@ -40,7 +41,8 @@ Primary.args = {
 };
 
 export const Alerts = Template.bind({});
-Primary.args = {
+
+Alerts.args = {
  
   title: 'Alert',
   text: 'Texto de prueba',

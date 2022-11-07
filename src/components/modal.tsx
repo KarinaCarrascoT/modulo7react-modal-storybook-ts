@@ -31,7 +31,7 @@ interface ModalProps {
 }
 
 /**
- * Primary UI component for user interaction
+ * Simple Dialog UI component 
  */
 export const Modal = ({
   title ,
