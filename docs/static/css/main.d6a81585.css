@@ -65,6 +65,163 @@ button + button {
 label {
   color: #F90;
 }
+
+ .modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+
+}
+.storybook-modal--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner{
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+}
+.modal_size_large{
+  height: 70%;
+  width: 50%;
+}
+.modal_size_medium{
+  height: 50%;
+  width: 50%;
+}
+
+.modal_size_small{
+  height: 20%;
+  width: 20%;
+}
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+.btn {
+  background: green;
+  padding: 1em;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn--blue {
+  background: #2980b9;
+}
+.btn--blue:active {
+  background: blue;
+}
+.btn--blue:hover
+{
+  background: #0066FF;
+}
+.btn--blue:focus {
+  background: #3498db;
+}
+
+.btn--green {
+  background: #27ae60;
+}
+.btn--green:active {
+  background: green;
+}
+.btn--green:hover
+{
+  background: #00ff55;
+}
+.btn--green:focus {
+  background: #2ecc71;
+}
+
+.btn--red {
+  background: #ad0404;
+}
+.btn--red:hover,
+.btn--red:focus {
+  background: #e24949;
+}
+.btn--red:active {
+  background: red;
+}
+
+
 section {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -136,4 +293,4 @@ section .tip-wrapper svg path {
 }
 
 
-/*# sourceMappingURL=main.d39b586b.css.map*/
+/*# sourceMappingURL=main.d6a81585.css.map*/
