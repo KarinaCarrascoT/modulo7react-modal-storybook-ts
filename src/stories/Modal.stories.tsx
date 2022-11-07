@@ -16,9 +16,9 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />;
 
-export const SimpleDialog = Template.bind({});
+export const BasicDialog = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-SimpleDialog.args = {
+BasicDialog.args = {
  
   title: 'Título Diálogo Simple',
   text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum ',
@@ -28,7 +28,7 @@ SimpleDialog.args = {
   
 };
 
-export const BasicDialog = Template.bind({});
+/*export const BasicDialog = Template.bind({});
 
 BasicDialog.args = {
  
@@ -38,7 +38,7 @@ BasicDialog.args = {
   size: 'small',
   buttonColor: 'red'
   
-};
+};*/
 
 export const Alerts = Template.bind({});
 
@@ -50,20 +50,20 @@ Alerts.args = {
   size: 'small',
   buttonColor: 'red'
 };
-export const Transitions = Template.bind({});
+//export const Transitions = Template.bind({});
 
-export const FormsDialog = Template.bind({});
+//export const FormsDialog = Template.bind({});
 
-export const Customization = Template.bind({});
+//export const Customization = Template.bind({});
 
-export const FullScreenDialog = Template.bind({});
+//export const FullScreenDialog = Template.bind({});
 
-export const OptionalSizes = Template.bind({});
+//export const OptionalSizes = Template.bind({});
 
-export const ResponsiveFullScreen = Template.bind({});
+//export const ResponsiveFullScreen = Template.bind({});
 
-export const ConfirmationDialogs = Template.bind({});
+//export const ConfirmationDialogs = Template.bind({});
 
-export const DraggableDialog = Template.bind({});
+//export const DraggableDialog = Template.bind({});
 
-export const ScrollingLongContent = Template.bind({});
+//export const ScrollingLongContent = Template.bind({});
