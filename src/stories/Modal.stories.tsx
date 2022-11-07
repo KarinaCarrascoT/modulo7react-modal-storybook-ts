@@ -25,20 +25,7 @@ BasicDialog.args = {
   buttonText: 'Open Simple Dialog',
   size: 'large',
   buttonColor: 'green'
-  
 };
-
-/*export const BasicDialog = Template.bind({});
-
-BasicDialog.args = {
- 
-  title: 'Diálogo Básico',
-  text: 'Texto de prueba',
-  buttonText: 'Diálogo Básico',
-  size: 'small',
-  buttonColor: 'red'
-  
-};*/
 
 export const Alerts = Template.bind({});
 
@@ -50,20 +37,4 @@ Alerts.args = {
   size: 'small',
   buttonColor: 'red'
 };
-//export const Transitions = Template.bind({});
 
-//export const FormsDialog = Template.bind({});
-
-//export const Customization = Template.bind({});
-
-//export const FullScreenDialog = Template.bind({});
-
-//export const OptionalSizes = Template.bind({});
-
-//export const ResponsiveFullScreen = Template.bind({});
-
-//export const ConfirmationDialogs = Template.bind({});
-
-//export const DraggableDialog = Template.bind({});
-
-//export const ScrollingLongContent = Template.bind({});
